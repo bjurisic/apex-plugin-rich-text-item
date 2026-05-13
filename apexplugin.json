@@ -11,7 +11,7 @@
   "apex": {
     "version": "24.2.0",
     "plugin_type": "ITEM TYPE",
-    "internal_name": "COM.PASTORAL.RICH_TEXT_EDITOR",
+    "internal_name": "COM.mywork.RICH_TEXT_EDITOR",
     "display_name": "Rich Text Editor"
   },
   "files": {
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bjurisic/APEX.git"
+    "url": "https://github.com/bjurisic/apex-plugin-rich-text-item.git"
   },
   "license": "MIT"
 }
