@@ -22,11 +22,11 @@
                                                                                                                                                                                                                                                                                 
   ## Instalacija
                                                                                                                                                                                                                                                                                 
-  1. **Kreiraj render proceduru** — pokreni kao PASTORAL korisnik:                                                                                                                                                                                                              
+  1. **Kreiraj render proceduru**
      ```sql
      @pck_rich_text_item.sql                                                                                                                                                                                                                                                    
                                                                                                                                                                                                                                                                               
-  2. Registriraj plugin u aplikaciji — pokreni kao PASTORAL korisnik:                                                                                                                                                                                                           
+  2. Registriraj plugin u aplikaciji
   @plugin_rich_text_editor.sql
                                                                                                                                                                                                                                                                                 
   Korištenje                                                                                                                                                                                                                                                                    
