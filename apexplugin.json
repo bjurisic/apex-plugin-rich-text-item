@@ -2,7 +2,12 @@
   "name": "Rich Text Item",
   "version": "1.0.3",
   "description": "Oracle APEX Rich Text Item plugin.",
-  "keywords": ["oracle", "apex", "plugin"],
+  "keywords": [
+    "oracle",
+    "apex",
+    "plugin",
+    "rich text"
+  ],
   "homepage": "https://github.com/bjurisic/apex-plugin-rich-text-item",
   "license": "MIT",
   "author": {
