@@ -5,7 +5,7 @@ whenever sqlerror exit sql.sqlcode rollback
 --
 -- Oracle APEX export file
 -- Rich Text Editor - Item Plugin
--- APEX 24.2.0 | Application: 101 | Schema: PASTORAL
+-- APEX 24.2.0 | Application: 101 | Owner: Bjurisic
 --
 -- Redoslijed instalacije:
 --   1. Pokrenuti pck_rich_text_item.sql  (kreira render proceduru)
