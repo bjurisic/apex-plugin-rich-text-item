@@ -1,0 +1,30 @@
+{
+  "name": "Rich Text Editor",
+  "version": "1.0.0",
+  "description": "APEX Item Plugin za unos formatiranog teksta. Podržava bold, italic, underline, liste, naslove, linkove i više. Koristi Quill.js 1.3.7 (open source).",
+  "keywords": ["rich text", "editor", "quill", "wysiwyg", "formatting", "item plugin"],
+  "author": {
+    "name": "Bože Jurisic",
+    "email": "bozejurisic93@gmail.com",
+    "url": "https://github.com/bjurisic"
+  },
+  "apex": {
+    "version": "24.2.0",
+    "plugin_type": "ITEM TYPE",
+    "internal_name": "COM.PASTORAL.RICH_TEXT_EDITOR",
+    "display_name": "Rich Text Editor"
+  },
+  "files": {
+    "render_procedure": "pck_rich_text_item.sql",
+    "plugin_definition": "plugin_rich_text_editor.sql"
+  },
+  "dependencies": {
+    "quill": "1.3.7",
+    "quill_url": "https://cdn.quilljs.com/1.3.7/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bjurisic/APEX.git"
+  },
+  "license": "MIT"
+}
