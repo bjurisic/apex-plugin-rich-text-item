@@ -17,5 +17,17 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/bjurisic/apex-plugin-rich-text-item.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bjurisic/apex-plugin-rich-text-item/issues"
+  },
+  "icon": "fa fa-file-text-o",
+  "oracle": {
+    "apex": {
+      "versions": [
+        "21.1",
+        "24.1"
+      ]
+    }
   }
 }
