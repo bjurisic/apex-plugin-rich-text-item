@@ -32,7 +32,3 @@ Plugin koristi Quill.js 1.3.7 (open source, bez licencnih troškova).
 ```sql
 @pck_rich_text_item.sql
 
-l_height  := 300;    -- Height in pixels
-l_toolbar := 'FULL'; -- FULL or BASIC
-
-![Rich Text Editor](images/demo.png)
