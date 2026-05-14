@@ -1,50 +1,38 @@
-  Sadržaj:                                                                                                                                                                                                                                                                      
-  - Kratki opis što plugin radi
-  - Screenshot (možeš dodati kasnije kad testiraš)                                                                                                                                                                                                                              
-  - Preduvjeti                                                                                                                                                                                                                                                                
-  - Instalacija (2 koraka)                                                                                                                                                                                                                                                      
-  - Kako koristiti na stranici                                                                                                                                                                                                                                                
-  - Konfiguracija                                                                                                                                                                                                                                                               
-                                                                                                                                                                                                                                                                              
-  ---                                                                                                                                                                                                                                                                           
-  Evo gotovog README-a koji možeš direktno zalijepiti:                                                                                                                                                                                                                          
-   
-  # Rich Text Editor – Oracle APEX Item Plugin                                                                                                                                                                                                                                  
-                                                                                                                                                                                                                                                    
-  - Owner Bjurisic
-                                                                                                                                                                                                                                                                                    
-  APEX Item Plugin koji omogućuje unos formatiranog teksta (bold, italic, liste, linkovi, naslovi...).                                                                                                                                                                          
-  Koristi [Quill.js 1.3.7](https://quilljs.com/) — open source, bez licencnih troškova.                                                                                                                                                                                         
-                                                                                                                                                                                                                                                                                
-  ## Preduvjeti                                                                                                                                                                                                                                                               
-                                                                                                                                                                                                                                                                                
-  - Oracle APEX 24.2.0+  
-                                                                                                                                                                                                                                                                                
-  ## Instalacija
-                                                                                                                                                                                                                                                                                
-  1. **Kreiraj render proceduru**
-     ```sql
-     @pck_rich_text_item.sql                                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                                                              
-  2. Registriraj plugin u aplikaciji
-  @plugin_rich_text_editor.sql
-                                                                                                                                                                                                                                                                                
-  Korištenje                                                                                                                                                                                                                                                                    
-   
-  1. Na APEX stranici dodaj novi Page Item                                                                                                                                                                                                                                      
-  2. Za tip odaberi Rich Text Editor                                                                                                                                                                                                                                          
-  3. Vrijednost se sprema kao HTML string u session state                                                                                                                                                                                                                       
-                                                                                                                                                                                                                                                                                
-  Konfiguracija
-                                                                                                                                                                                                                                                                                
-  Visina editora i toolbar tip se mijenjaju direktno u pck_rich_text_item.sql:                                                                                                                                                                                                  
-   
-  l_height  := 300;    -- visina u pikselima                                                                                                                                                                                                                                    
-  l_toolbar := 'FULL'; -- 'FULL' ili 'BASIC'                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                                                                
-  FULL toolbar – naslovi, bold/italic/underline, boje, liste, uvlake, poravnanje, link, blockquote, kod                                                                                                                                                                         
-  BASIC toolbar – samo bold/italic/underline + liste                                                                                                                                                                                                                            
-                                                                                                                                                                                                                                                                                
-  Prikaz vrijednosti                                                                                                                                                                                                                                                            
-   
-  Vrijednost je HTML string — za prikaz na stranici koristi Static Content region bez HTML escapinga.  
+# Rich Text Editor – Oracle APEX Item Plugin
+
+**Owner:** Bjurisic
+
+Oracle APEX Item Plugin koji omogućuje unos formatiranog teksta
+(bold, italic, underline, liste, linkovi, naslovi i drugo).
+
+Plugin koristi Quill.js 1.3.7 (open source, bez licencnih troškova).
+
+---
+
+## Features
+
+- Rich text editing
+- HTML output
+- Configurable editor height
+- FULL and BASIC toolbar modes
+- Built on Quill.js 1.3.7
+
+---
+
+## Prerequisites
+
+- Oracle APEX 24.2.0 or later
+
+---
+
+## Installation
+
+### 1. Create the package
+
+```sql
+@pck_rich_text_item.sql
+
+l_height  := 300;    -- Height in pixels
+l_toolbar := 'FULL'; -- FULL or BASIC
+
+![Rich Text Editor](images/demo.png)
